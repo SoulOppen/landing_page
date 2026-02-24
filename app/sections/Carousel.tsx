@@ -24,11 +24,11 @@ export default function Carousel({ images }: CarouselProps) {
         {images.map((src, index) => (
           <div key={index} className="w-full">
             <Image
-              width={300}
-              height={240}
+              width={100}
+              height={100}
               src={src}
               alt={`Slide ${index + 1}`}
-              className="rounded-xl mx-auto"
+              className="rounded-xl object-cover w-100 mx-auto"
             />
           </div>
         ))}
