@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Landing Page Example",
     description: "Example of a landing page",
-    url: "https://landing-page-example.com",
+    url: "https://landing-page-mauve-nine-15.vercel.app/",
   },
 };
 
