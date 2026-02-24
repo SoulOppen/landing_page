@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
 import Footer from "./sections/Footer";
-import logo from "@/public/logo.webp"
+import Logo from "./Logo";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,10 +38,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between p-2`}
       >
         <div className="flex gap-2 w-full">
-          <picture className="w-1/3">
-          <Image src={logo} alt="Logo" width={100} height={100} className="rounded-full m-auto" />
+          <picture className="hidden sm:block md:w-1/3">
+          <Logo size={150} classAdd="sticky"/>
           </picture>
-          <div>
+          <div className="w-80 mx-auto sm:w-2/3">
           {children}
           </div>
         </div>
