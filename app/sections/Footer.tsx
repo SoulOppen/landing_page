@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer>
-      <p>© {new Date().getFullYear()} Mi Landing. Todos los derechos reservados.</p>
+    <footer className="text-center font-light">
+      <p>© {new Date().getFullYear()} My Landing. All rights reserved.</p>
     </footer>
   );
 }

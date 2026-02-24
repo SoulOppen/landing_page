@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav>
-      <ul className="flex justify-center gap-3 text-2xl font-bold bg-gray-800 p-2 rounded-md m-auto">
+      <ul className="text-center sm:flex sm:justify-center sm:gap-3 sm:text-2xl sm:font-bold bg-gray-800 p-2 rounded-md m-auto">
         <li>
           <Link href="#about">About</Link>
         </li>

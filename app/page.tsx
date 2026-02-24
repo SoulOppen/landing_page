@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <h1 className="text-3xl md:text-4xl font-bold text-center mt-6 mb-2">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-center mt-6 mb-2">
         Alex Taylor
       </h1>
       <Logo size={50} classAdd="sm:hidden my-4" />
