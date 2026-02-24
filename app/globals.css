@@ -1,21 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light mode: soft light background, light pink text */
+  --background: #fdf2f8; /* rosa muy claro */
+  --foreground: #f472b6; /* rosa claro para texto principal */
+  --accent: #ec4899; /* rosa más intenso para destacar */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark mode: dark purple background, readable light text */
+    --background: #1e1035; /* morado oscuro */
+    --foreground: #f9a8d4; /* rosa muy claro para texto */
+    --accent: #c4b5fd; /* lila suave como acento */
   }
 }
 
