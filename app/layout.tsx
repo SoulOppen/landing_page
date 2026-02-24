@@ -38,8 +38,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between p-2`}
       >
         <div className="flex gap-2 w-full">
-          <picture className="hidden sm:block md:w-1/3">
-          <Logo size={150} classAdd="sticky"/>
+          <picture className="hidden sm:block sd:w-1/3 fixed top-2 left-3.5">
+          <Logo size={150}/>
           </picture>
           <div className="w-80 mx-auto sm:w-2/3">
           {children}
