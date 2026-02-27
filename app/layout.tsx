@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Landing Page Example",
     description: "Example of a landing page",
-    url: "https://landing-page-example.com",
+    url: "https://landing-page-mauve-nine-15.vercel.app/",
   },
 };
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between p-2`}
       >
