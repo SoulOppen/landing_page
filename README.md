@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Artistic Landing Page
+
+A **creative, artistic** personal landing: visual portfolio, bio, and link to socials (Instagram). Built for artists, illustrators, and creators who want a simple, elegant site with a clear identity.
+
+## Features
+
+- **Artistic design**: pink/purple palette, automatic light and dark mode, refined typography.
+- **Sections**: About, Projects, Education, and CTA (follow on Instagram).
+- **Carousel** (react-slick) to showcase work or featured images.
+- **Logo** with filters (sepia, shadow) and sticky/fixed navigation.
+- Built with **Next.js** (App Router), **Tailwind CSS**, and **TypeScript**.
+
+## Requirements
+
+- Node.js 18+
+- pnpm (recommended), npm, or yarn
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
 
 ```bash
+pnpm install
+# or
+npm install
+```
+
+Start the development server:
+
+```bash
+pnpm dev
+# or
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  layout.tsx      # Global layout, side logo
+  page.tsx        # Main page (sections in order)
+  globals.css     # Light/dark color variables
+  sections/       # Section components
+    About.tsx
+    Project.tsx
+    Education.tsx
+    CTA.tsx
+    Nav.tsx
+    Footer.tsx
+    items/
+      Carousel.tsx
+  Logo.tsx
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Colors**: edit CSS variables in `app/globals.css` (light pink in light mode, dark purple in dark mode).
+- **Content**: update copy in `About`, `Project`, `Education`, and `CTA`.
+- **Carousel images**: in `page.tsx`, change the `images` array passed to `Carousel`; put files in `public/images/` (e.g. `slide1.jpg`).
+- **Instagram**: in `CTA.tsx`, set the link URL to your profile.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can deploy on [Vercel](https://vercel.com) (recommended for Next.js) or any Node.js-capable host. See the [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying).

@@ -1,4 +1,4 @@
-import Carousel from "./Carousel";
+import Carousel from "./items/Carousel";
 
 export default function CTA() {
   return (
