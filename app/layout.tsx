@@ -41,7 +41,7 @@ export default function RootLayout({
           <picture className="hidden sm:block sd:w-1/3 fixed top-2 left-3.5">
           <Logo size={150}/>
           </picture>
-          <div className="w-80 mxs-auto sm:w-2/3">
+          <div className="w-80 mx-auto sm:w-2/3">
           {children}
           </div>
         </div>

@@ -2,6 +2,7 @@
 import About from "./sections/About";
 import Project from "./sections/Project";
 import Education from "./sections/Education";
+import Faq from "./sections/Faq";
 import CTA from "./sections/CTA";
 import Nav from "./sections/Nav";
 import Logo from "./Logo";
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Project />
       <Education />
+      <Faq />
       <CTA />
     </>
   );

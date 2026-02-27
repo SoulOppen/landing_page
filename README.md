@@ -44,16 +44,18 @@ app/
   layout.tsx      # Global layout, side logo
   page.tsx        # Main page (sections in order)
   globals.css     # Light/dark color variables
+  Logo.tsx        # Logo with sepia/shadow
   sections/       # Section components
     About.tsx
     Project.tsx
     Education.tsx
+    Faq.tsx
     CTA.tsx
     Nav.tsx
     Footer.tsx
-    items/
+    items/        # Reusable items
       Carousel.tsx
-  Logo.tsx
+      FaqItem.tsx
 ```
 
 ## Customization

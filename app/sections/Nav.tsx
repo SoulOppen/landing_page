@@ -14,6 +14,9 @@ export default function Nav() {
           <Link href="#education">Education</Link>
         </li>
         <li>
+          <Link href="#faq">FAQ</Link>
+        </li>
+        <li>
           <Link href="#cta">CTA</Link>
         </li>
       </ul>
