@@ -1,6 +1,7 @@
 export default function About() {
   return (
-    <section id="about" className="max-w-3xl mx-auto px-4 py-12 text-left">
+    <section id="about" className="relative max-w-3xl mx-auto px-4 py-12 text-left md:border-l-2 md:border-foreground/40 md:pl-8">
+      <span className="absolute left-0 top-16 hidden md:block w-4 h-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent" aria-hidden />
       <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">
         About Me
       </h2>
