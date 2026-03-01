@@ -1,19 +1,20 @@
 import Image from "next/image";
 import logo from "@/public/logo.webp";
 
-type LogoProps = {
-  size: number;
-  classAdd?:string
-};
+type props={
+  addClass?:string
+}
 
-export default function Logo({ size, classAdd }: LogoProps) {
+export default function Logo({addClass}:props) {
+
   return (
+    <div className={`${addClass} mx-auto`}>
     <Image
       src={logo}
       alt="Logo"
-      width={size}
-      height={size}
-      className={`${classAdd} rounded-full m-auto filter sepia 150 shadow-[0_10px_30px_rgba(236,72,153,0.6)]`}
+      fill
+      className="mx-auto filter sepia 150 shadow-[0_10px_30px_rgba(236,72,153,0.6)] object-cover rounded-full"
     />
+    </div>
   );
 }
