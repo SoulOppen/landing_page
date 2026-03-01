@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between p-2`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col justify-between `}
       >
       <div className="flex flex-row relative">
         <Logo addClass="sticky w-[30vh]  h-[30vh] hidden sm:block aspect-square top-4.5"/>

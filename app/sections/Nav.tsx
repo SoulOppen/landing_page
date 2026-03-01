@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav>
-      <ul className="text-center text-xl sm:flex sm:justify-center sm:gap-3 sm:text-3xl sm:font-bold bg-gray-800 p-2 rounded-md m-auto">
+    <nav className="w-full max-w-3xl mx-auto p-4">
+      <ul className="flex flex-col sm:flex-row sm:justify-center gap-4 text-xl text-center md:text-xl font-semibold p-2 sm:rounded-lg bg-white/5">
         <li>
           <Link href="#about">About</Link>
         </li>

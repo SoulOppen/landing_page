@@ -1,12 +1,18 @@
 @import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
 :root {
   /* Light mode: soft light background, light pink text */
-  --background: #fdf2f8; /* rosa muy claro */
-  --foreground: #f472b6; /* rosa claro para texto principal */
-  --accent: #ec4899; /* rosa más intenso para destacar */
+  --background: #fdf2f8;
+  /* rosa muy claro */
+  --foreground: #f472b6;
+  /* rosa claro para texto principal */
+  --accent: #ec4899;
+  /* rosa más intenso para destacar */
 }
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -19,9 +25,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark mode: dark purple background, readable light text */
-    --background: #1e1035; /* morado oscuro */
-    --foreground: #f9a8d4; /* rosa muy claro para texto */
-    --accent: #c4b5fd; /* lila suave como acento */
+    --background: #1e1035;
+    /* morado oscuro */
+    --foreground: #f9a8d4;
+    /* rosa muy claro para texto */
+    --accent: #c4b5fd;
+    /* lila suave como acento */
   }
 }
 
