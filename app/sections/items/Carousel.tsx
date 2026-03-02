@@ -19,13 +19,12 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <section className="max-w-3xl mx-auto px-4 py-12 w-1/2">
-      <Slider {...settings}>
+    <section className="px-4 py-12">
+      <Slider {...settings} className="w-4/5 mx-auto ">
         {images.map((src, index) => (
-          <div key={index} className="w-full">
+          <div key={index} className="relative h-[33vh]">
             <Image
-              width={100}
-              height={100}
+              fill
               src={src}
               alt={`Slide ${index + 1}`}
               className="rounded-xl object-cover w-100 mx-auto"
